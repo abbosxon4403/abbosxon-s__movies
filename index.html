@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Salom bolalar. Kim darsni ko'rayotgan bo'lsa ko'ryabman desin!">
+    <meta name="description" content="Bizning meta desc imiz With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nimadir-pro.netlify.app/">
+    <meta property="og:title" content="Salom bolalar. Kim darsni ko'rayotgan bo'lsa ko'ryabman desin!">
+    <meta property="og:description" content="Bizning meta desc imiz With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+    <meta property="og:image" content="https://i.ibb.co/3dvpPBZ/IMG-0821.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nimadir-pro.netlify.app/">
+    <meta property="twitter:title" content="Salom bolalar. Kim darsni ko'rayotgan bo'lsa ko'ryabman desin!">
+    <meta property="twitter:description" content="Bizning meta desc imiz With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+    <meta property="twitter:image" content="https://i.ibb.co/3dvpPBZ/IMG-0821.jpg">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>month3 day3</title>
+</head>
+
+<body>
+    <div class="container my-4">
+        <h1 class="h2 text-center"><i class="bi bi-camera-video-fill"></i> Movies catalog</h1>
+        <div class="min-container container d-flex">
+            <div class="col-4">
+                <form action="https://eco.htmlacademy.ru" method="GET" class="form">
+                    <div class="form-wrapper mb-3">
+                        <label class="form-label visually-hidden" for="movie">Movie name</label>
+                        <input class="form-control " type="text" id="movie" name="movie" placeholder="Movie name" required>
+                    </div>
+                    <div class="form-wrapper mb-3">
+                        <label for="rating" class="visually-hidden">Movie rating</label>
+                        <input type="number" placeholder="Rate" class="form-control" id="rating" required>
+                    </div>
+                    <select class="form-select mb-3" aria-label="Default select example">
+                        <option selected>All</option>
+                        <option value="1">Horror</option>
+                        <option value="2">comedia</option>
+                        <option value="3">trailers</option>
+                      </select>
+                    <select class="form-select mb-3" aria-label="Default select example" name="rating(hight to low)">
+                        <option selected>Rating (hight to low)</option>
+                        <option value="1">top</option>
+                        <option value="2">50/50</option>
+                        <option value="3">bad (-100)</option>
+                      </select>
+                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                </form>
+                <h3 class="h2 mt-4 mb-3">Bookmarked movies</h3>
+
+                <div class="list p-3 border ">
+                    <b class="text d-block mb-2">Avengers: Infinity var</b>
+                    <button class="btn btn-danger"><i class="bi bi-trash-fill"></i> Remove</button>
+                </div>
+                <div class="list p-3 border ">
+                    <b class="text d-block mb-2">The Avengers</b>
+                    <button class="btn btn-danger"><i class="bi bi-trash-fill"></i> Remove</button>
+                </div>
+                <div class="list p-3 border ">
+                    <b class="text d-block mb-2">12 Years a Slave</b>
+                    <button class="btn btn-danger"><i class="bi bi-trash-fill"></i> Remove</button>
+                </div>
+            </div>
+            <!-- end of col4 section -->
+            <div class="col-8 ms-5 mt-2">
+                <h5 class="">Search results: 39</h5>
+                <div class="alert alert-info mb-2">Use the form on the left to search for a movie</div>
+                <div class="cards d-flex justify-content-between mt-4">
+                    <div class="card col-5 ">
+                        <img class=" w-100" src="./img/avengers.jpg" height="265" alt="the avengers">
+                        <div class="content p-4">
+                            <h5 class="h5">Avengers: Infinity War</h5>
+                            <p class="date"><i class="bi bi-calendar4"></i> 2018</p>
+                            <p class="rate"><i class="bi bi-star"></i> 8.7</p>
+                            <button class="btn me-3 p-2 ps-3 pe-3 btn-sm bg-none border border-primary">Watch trailer</button>
+                            <button class="btn me-3 p-2 ps-3 pe-3 btn-sm bg-none border border-success">More info</button>
+                            <button class="btn ps-3 p-2 pe-3 btn-sm bg-none border border-warning ">Bookmark</button>
+                        </div>
+                    </div>
+                    <div class="card col-5">
+                        <img class=" w-100" src="./img/iron__man.jpeg" height="265" alt="iron man">
+                        <div class="content p-4">
+                            <h5 class="h5">The Avengers</h5>
+                            <p class="date"><i class="bi bi-calendar4"></i> 2012</p>
+                            <p class="rate"><i class="bi bi-star"></i> 8.1</p>
+                            <button class="btn me-3 p-2 ps-3 pe-3 btn-sm bg-none border border-primary">Watch trailer</button>
+                            <button class="btn me-3 p-2 ps-3 pe-3 btn-sm bg-none border border-success">More info</button>
+                            <button class="btn p-2  ps-3 pe-3 btn-sm bg-none border border-warning">Bookmark</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of movies and images -->
+                <nav class="nav d-flex justify-content-center mt-4" aria-label="...">
+                    <ul class="pagination pagination-lg ">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end of right section (col-8) -->
+        </div>
+        <!-- end of min container -->
+    </div>
+    <!-- end of all -->
+</body>
+
+</html>
